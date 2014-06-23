@@ -1,115 +1,192 @@
+/* This is the CSS for the home page and the header,body and footer which are e suposed 
+to be with the same style at all pages */ 
+
 body {
-	background: #F4F4F0;
+	background-image: -ms-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
+	background-image: -moz-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
+	background-image: -o-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(, #D0C8D4), color-stop(, #D0C8B4));
+	background-image: -webkit-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
+	background-image: linear-gradient(to left, #D0C8D4 0%, #D0C8B4 0%);
 }
 
 #logo{
-	font-family: 'Anton', sans-serif;
- 	color: #3399FF;
+  max-width:100%;
+  height: auto; 
 }
 
-header {
+#homepage-header {
+	font-family: 'Anton', sans-serif;
+	font-size: 1.4em;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#header-text {
+	font-size: 2.0em;
+	color: #6C331F;
+	text-align: center;
+	word-wrap: break-word;
 	padding-top: 15px;
-	font-family: 'Anton', sans-serif;
 }
 
-header h2 {
-	font-size: 2.5em;
+#header-subtext {
+	font-size: 0.5em;
+	color: #4C7576;
+	word-wrap: break-word;
+	text-align: center;
 }
-
 
 #cover-image {
-   border: 1px solid #60605A;
+   border: 1px solid #681F09;
    border-bottom: none;
    border-top: none;
 }
 
 #cover-image img {
-	margin-top: 0px;
-	width: 100%;
+	margin-top: 0px; 
+	max-width: 100%;
 	height: auto;
+
 }
 
-#nav-wrapper {
-	padding-top:25px;
+.navbar-toggle {
+	background-color: white !important;
 }
 
-nav {
-    font-family: 'Anton', sans-serif;
-	text-align: center !important;
-	font-size: 1.3em;
-	border: 1px solid #60605A;
-	border-bottom: none;
+.navbar-toggle:hover {
+	background-color: #DEBF8B !important;
+}
+
+#navigation {
+	font-family: 'Anton', sans-serif;
+    font-size: 1.4em;
+    border: 1px solid #681F09 !important;
+    border-bottom: none !important;
+    border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	background: #60605A;
-	background: linear-gradient(top, #60605A 0%, #7F7F7F 100%);  
-	background: -moz-linear-gradient(top, #60605A 0%, #7F7F7F 100%); 
-	background: -webkit-linear-gradient(top, #60605A 0%,#7F7F7F 100%); 
+	margin-bottom: -20px;
 }
 
-nav ul {
-	padding: 10px 10px !important;
+nav.navbar {
+	padding: 20px;
+	background-image: -ms-linear-gradient(top, #AB5A25 0%, #AB5A40 0%) !important;
+	background-image: -moz-linear-gradient(top, #AB5A25 0%, #AB5A40 0%) !important;
+	background-image: -o-linear-gradient(top, #AB5A25 0%, #AB5A40 0%) !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(, #AB5A25), color-stop(, #AB5A40)) !important;
+	background-image: -webkit-linear-gradient(top, #AB5A25 0%, #AB5A40 0%) !important;
+	background-image: linear-gradient(to bottom, #AB5A25 0%, #AB5A40 0%) !important;
 }
 
-nav ul li:hover {
-	background: #efefef !important; 
-	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%) !important;  
-	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%) !important; 
-	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%) !important; 
-	 
-}
-
-nav ul li:hover a {
-	color: black !important;
-	background: #efefef !important; 
-	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%) !important;  
-	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%) !important; 
-	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%) !important; 
-}
-
-
-nav ul li a {
-	padding: 10px 10px !important;
+nav.navbar ul li a {
 	color: white !important;
 	text-decoration: none !important;
 }
 
-nav ul ul li a:hover {
-	color: white !important;
-	background: #60605A !important;
-	background: linear-gradient(top, #60605A 0%, #7F7F7F 100%) !important;  
-	background: -moz-linear-gradient(top, #60605A 0%, #7F7F7F 100%) !important ; 
-	background: -webkit-linear-gradient(top, #60605A 0%,#7F7F7F 100%) !important; 
+
+nav.navbar ul li:hover a {
+	color: #6C331F !important;
+	font-size: 1.2em !important;
+	background-image: -ms-linear-gradient(right, #DEBF8B 0%, #DEBF8E 0%) !important;
+	background-image: -moz-linear-gradient(right, #DEBF8B 0%, #DEBF8E 0%) !important;
+	background-image: -o-linear-gradient(right, #DEBF8B 0%, #DEBF8E 0%) !!important;
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(, #DEBF8B), color-stop(, #DEBF8E)) !!important;
+	background-image: -webkit-linear-gradient(right, #DEBF8B 0%, #DEBF8E 0%) !important;
+	background-image: linear-gradient(to left, #DEBF8B 0%, #DEBF8E 0%) !important;
+	border-radius: 5px;	 
+}
+
+img.img-thumbnail {
+	background-image: -ms-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
+	background-image: -moz-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
+	background-image: -o-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(, #D0C8D4), color-stop(, #D0C8B4));
+	background-image: -webkit-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
+	background-image: linear-gradient(to left, #D0C8D4 0%, #D0C8B4 0%);
+}
+
+img.img-thumbnail:hover {
+	padding: 25%;
 }
 
 section {
 	font-family: 'Anton', sans-serif;
-	border: 1px solid #60605A;
+	border: 1px solid #681F09;
 	border-top: none;
+	border-bottom: none;
 }
 
 footer {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
-	background-color: #60605A;
-	background: linear-gradient(top, #60605A 0%, #7F7F7F 100%);  
-	background: -moz-linear-gradient(top, #60605A 0%, #7F7F7F 100%); 
-	background: -webkit-linear-gradient(top, #60605A 0%,#7F7F7F 100%); 
+	border: 1px solid #681F09;
+	border-top: none !important;
+	background-image: -ms-linear-gradient(top, #AB5A25 0%, #AB5A40 0%) !important;
+	background-image: -moz-linear-gradient(top, #AB5A25 0%, #AB5A40 0%) !important;
+	background-image: -o-linear-gradient(top, #AB5A25 0%, #AB5A40 0%) !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(, #AB5A25), color-stop(, #AB5A40)) !important;
+	background-image: -webkit-linear-gradient(top, #AB5A25 0%, #AB5A40 0%) !important;
+	background-image: linear-gradient(to bottom, #AB5A25 0%, #AB5A40 0%) !important;
 	text-align: center;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 
 footer a {
-	color: white;
+	font-size: 1.2em;
+	color: black;
+	font-weight: bolder;
 }
 
 footer a:hover {
-	color: #fff !important; 
+	color: white !important; 
 }
 
 #disclaimer {
-	color: white;
+	color: black;
+	font-weight: bold;
 	font-size: 0.9em;
 }
+
+/* This is the CSS for the SoftLooney and Other Stuff section */
+
+section div.basic-effects {
+	padding: 5px;
+}
+
+section a.basic-effects:hover {
+	text-decoration: none !important;
+	font-size: 1.2em;
+}
+
+section h2.basic-effects {
+	font-size: 2.1em;
+	color:#6C331F !important;
+}
+
+section h2.basic-effects:hover {
+	color:#4C7576 !important;
+	text-align: center;
+	background-color: white;
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+section img.basic-effects {
+	max-width: 100%;
+	height: auto;
+}
+
+section img.basic-effects:hover {
+	opacity: 0.6;
+}
+
+section p.basic-effects {
+	padding-top: 10px;
+	text-align: left;
+}
+
+
+
