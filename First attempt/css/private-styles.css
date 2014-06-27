@@ -44,10 +44,11 @@ body {
 }
 
 #cover-image img {
-	margin-top: 0px; 
 	max-width: 100%;
 	height: auto;
-
+	display: block;
+	margin: 0 auto;
+	border: 3px solid #D0C8B4;
 }
 
 .navbar-toggle {
@@ -57,6 +58,12 @@ body {
 .navbar-toggle:hover {
 	background-color: #DEBF8B !important;
 }
+
+.navbar-fixed-top {
+    position: relative;
+    top: auto;
+ }
+
 
 #navigation {
 	font-family: 'Anton', sans-serif;
@@ -103,10 +110,6 @@ img.img-thumbnail {
 	background-image: -webkit-gradient(linear, right top, left top, color-stop(, #D0C8D4), color-stop(, #D0C8B4));
 	background-image: -webkit-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
 	background-image: linear-gradient(to left, #D0C8D4 0%, #D0C8B4 0%);
-}
-
-img.img-thumbnail:hover {
-	padding: 25%;
 }
 
 section {
@@ -157,7 +160,6 @@ section div.basic-effects {
 
 section a.basic-effects:hover {
 	text-decoration: none !important;
-	font-size: 1.2em;
 }
 
 section h2.basic-effects {
@@ -167,11 +169,6 @@ section h2.basic-effects {
 
 section h2.basic-effects:hover {
 	color:#4C7576 !important;
-	text-align: center;
-	background-color: white;
-	border-radius: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 }
 
 section img.basic-effects {
@@ -189,4 +186,39 @@ section p.basic-effects {
 }
 
 
+@media all and (max-width: 992px) {
+ 	#soflooney-section img.basic-effects {
+ 		width: 50%;
+ 	}
+}
 
+@media all and (max-width: 768px) {
+ 	header {
+ 		display: none !important;
+ 	}
+
+ 	#soflooney-section img.basic-effects {
+ 		width: 100%;
+ 	}
+
+ 	#mainContainer {
+ 		font-size: 14px;
+ 	}
+    
+}
+
+@media (max-width: 768px) {
+    .navbar-fixed-top {
+	    position:fixed;
+	    top: 0;
+    }
+
+    section.row {
+    	margin-top: 100px;
+    }
+
+    #cover-image {
+    	margin-top: 100px;
+    	margin-bottom: -70px;
+    }
+}
