@@ -1,5 +1,7 @@
 /* This is the CSS for the home page and the header,body and footer which are e suposed 
 to be with the same style at all pages */ 
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,cyrillic-ext);
 
 body {
 	background-image: -ms-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
@@ -8,6 +10,19 @@ body {
 	background-image: -webkit-gradient(linear, right top, left top, color-stop(, #D0C8D4), color-stop(, #D0C8B4));
 	background-image: -webkit-linear-gradient(right, #D0C8D4 0%, #D0C8B4 0%);
 	background-image: linear-gradient(to left, #D0C8D4 0%, #D0C8B4 0%);
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+h1 {
+	font-size:1.8em;
+	font-family: 'Lobster', cursive;
+}
+
+h2 {
+	font-size:1.6em;
+	font-family: 'Lobster', cursive;
 }
 
 #logo{
@@ -16,14 +31,14 @@ body {
 }
 
 #homepage-header {
-	font-family: 'Anton', sans-serif;
 	font-size: 1.4em;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
 
 #header-text {
-	font-size: 2.0em;
+	font-family: 'Lobster', cursive;
+	font-size: 1.8em;
 	color: #6C331F;
 	text-align: center;
 	word-wrap: break-word;
@@ -31,6 +46,7 @@ body {
 }
 
 #header-subtext {
+	font-family: 'Lobster', cursive;
 	font-size: 0.5em;
 	color: #4C7576;
 	word-wrap: break-word;
@@ -66,8 +82,7 @@ body {
 
 
 #navigation {
-	font-family: 'Anton', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.3em;
     border: 1px solid #681F09 !important;
     border-bottom: none !important;
     border-top-left-radius: 5px;
@@ -113,7 +128,6 @@ img.img-thumbnail {
 }
 
 section {
-	font-family: 'Anton', sans-serif;
 	border: 1px solid #681F09;
 	border-top: none;
 	border-bottom: none;
@@ -159,11 +173,12 @@ section div.basic-effects {
 }
 
 section a.basic-effects:hover {
-	text-decoration: none !important;
+	text-decoration: underline !important;
 }
 
 section h2.basic-effects {
-	font-size: 2.1em;
+	font-family: 'Lobster', cursive;
+	font-size: 1.9em;
 	color:#6C331F !important;
 }
 
@@ -174,6 +189,7 @@ section h2.basic-effects:hover {
 section img.basic-effects {
 	max-width: 100%;
 	height: auto;
+	margin-top: 10px;
 }
 
 section img.basic-effects:hover {
@@ -182,9 +198,8 @@ section img.basic-effects:hover {
 
 section p.basic-effects {
 	padding-top: 10px;
-	text-align: left;
+	text-align: justify;
 }
-
 
 @media all and (max-width: 992px) {
  	#soflooney-section img.basic-effects {
